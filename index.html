@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Financial Calculator</h1>
+       </header>
+    <main>
+        <h2>EMI Calculator</h2>
+        <form id="emi-form">
+            <label for="loan-amount">Loan Amount:</label>
+            <input type="number" id="loan-amount" required>
+            <label for="interest-rate">Interest Rate (%):</label>
+            <input type="number" step="0.01" id="interest-rate" required>
+            <label for="loan-tenure">Loan Tenure (years):</label>
+            <input type="number" id="loan-tenure" required>
+            <button type="button" onclick="calculateEMI()">Calculate EMI</button>
+        </form>
+        <div id="emi-result"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Financial Calculator by Yogesh</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
